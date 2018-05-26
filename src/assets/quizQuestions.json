@@ -1,0 +1,58 @@
+{
+	"questions": [{
+			"question": "What are you looking to do with your hair?",
+			"responses": [{
+					"response": "Touch up roots or refresh current treated color",
+					"value": 1
+				},
+				{
+					"response": "Change your hair color or start coloring your hair",
+					"value": 2
+				},
+				{
+					"response": "Not sure, just exploring options",
+					"value": 3
+				}
+			],
+			"hintText": "Why we ask: We want to know what you're thinking. No matter what you enter, you'll still be able to see & evaluate our full range of products & colors."
+		},
+		{
+			"question": "What color options are you interested in?",
+			"responses": [{
+					"response": "Lighter than your current hair color",
+					"value": 1
+				},
+				{
+					"response": "Stay about the same level, but try a different shade",
+					"value": 2
+				},
+				{
+					"response": "Darker than your current hair color",
+					"value": 3
+				},
+				{
+					"response": "Not sure",
+					"value": 4
+				}
+			],
+			"hintText": "Pro Tip: \"Level\" refers to how light or dark your color is. \"Shade\" refers to the tones, like brown, golden, reddish, ash."
+		},
+		{
+			"question": "Would you like to know more?",
+			"responses": [{
+					"response": "Yes, I would like to know more about signing up for the Colonial Infantry",
+					"value": 1
+				},
+				{
+					"response": "No, bugs terrify me. Leave them be on Klandathu",
+					"value": 2
+				},
+				{
+					"response": "The only good bug is a dead bug!",
+					"value": 3
+				}
+			],
+			"hintText": "Your basic arachnid warrior isn't too smart, but you can blow off a limb and it's still 86% combat effective. Here's a tip: aim for the nerve stem and put it down for good."
+		}
+	]
+}

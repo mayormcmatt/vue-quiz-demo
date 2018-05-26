@@ -1,9 +1,27 @@
 <template>
-	<h4>
-		Hello World test
-	</h4>
+	<div>
+		<slot>{{questions}}</slot>
+	</div>
 </template>
 
-<script></script>
+<script>
+	export default {
+		props: ['jsonURL'],
+		data: function () {
+			return {
+				// jsonURL: 'https://api.myjson.com/bins/17nqsm',
+				questions: [],
+				responses: []
+			}
+		},
+		created() {
+			fetch(this.jsonURL)
+			.then(res => res.json())
+			.then(res => {
+				this.questions = res.questions
+			})
+		}
+	}
+</script>
 
 <style lang="scss"></style>

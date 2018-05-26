@@ -2,7 +2,7 @@
 	<div id="app">
 		<img src="./assets/logo.png">
 		<h1>{{ msg }}</h1>
-		<quizComponent></quizComponent>
+		<quizComponent :jsonURL="jsonURL"></quizComponent>
 	</div>
 </template>
 
@@ -13,7 +13,8 @@
 		name: 'app',
 		data() {
 			return {
-				msg: 'Welcome to Your Vue.js App'
+				msg: 'Welcome to Your Vue.js App',
+				jsonURL: 'https://api.myjson.com/bins/17nqsm'
 			}
 		},
 		components: {
