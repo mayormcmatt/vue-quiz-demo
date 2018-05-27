@@ -1,54 +1,57 @@
 {
 	"questions": [{
+			"id": 1,
 			"question": "What are you looking to do with your hair?",
-			"responses": [{
-					"response": "Touch up roots or refresh current treated color",
+			"options": [{
+					"option": "Touch up roots or refresh current treated color",
 					"value": 1
 				},
 				{
-					"response": "Change your hair color or start coloring your hair",
+					"option": "Change your hair color or start coloring your hair",
 					"value": 2
 				},
 				{
-					"response": "Not sure, just exploring options",
+					"option": "Not sure, just exploring options",
 					"value": 3
 				}
 			],
 			"hintText": "Why we ask: We want to know what you're thinking. No matter what you enter, you'll still be able to see & evaluate our full range of products & colors."
 		},
 		{
+			"id": 2,
 			"question": "What color options are you interested in?",
-			"responses": [{
-					"response": "Lighter than your current hair color",
+			"options": [{
+					"option": "Lighter than your current hair color",
 					"value": 1
 				},
 				{
-					"response": "Stay about the same level, but try a different shade",
+					"option": "Stay about the same level, but try a different shade",
 					"value": 2
 				},
 				{
-					"response": "Darker than your current hair color",
+					"option": "Darker than your current hair color",
 					"value": 3
 				},
 				{
-					"response": "Not sure",
+					"option": "Not sure",
 					"value": 4
 				}
 			],
 			"hintText": "Pro Tip: \"Level\" refers to how light or dark your color is. \"Shade\" refers to the tones, like brown, golden, reddish, ash."
 		},
 		{
+			"id": 3,
 			"question": "Would you like to know more?",
-			"responses": [{
-					"response": "Yes, I would like to know more about signing up for the Colonial Infantry",
+			"options": [{
+					"option": "Yes, I would like to know more about signing up for the Colonial Infantry",
 					"value": 1
 				},
 				{
-					"response": "No, bugs terrify me. Leave them be on Klandathu",
+					"option": "No, bugs terrify me. Leave them be on Klandathu",
 					"value": 2
 				},
 				{
-					"response": "The only good bug is a dead bug!",
+					"option": "The only good bug is a dead bug!",
 					"value": 3
 				}
 			],

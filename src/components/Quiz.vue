@@ -1,25 +1,23 @@
 <template>
 	<div>
-		<slot>{{questions}}</slot>
+		<p>{{question}}</p>
+		<quizOptions v-for="option in options" :optionText="option.option"></quizOptions>
+		<p>{{id}}</p>
 	</div>
 </template>
 
 <script>
+	import QuizOptions from './QuizOptions.vue'
+
 	export default {
-		props: ['jsonURL'],
+		props: ['question', 'id', 'options'],
 		data: function () {
 			return {
-				// jsonURL: 'https://api.myjson.com/bins/17nqsm',
-				questions: [],
-				responses: []
+
 			}
 		},
-		created() {
-			fetch(this.jsonURL)
-			.then(res => res.json())
-			.then(res => {
-				this.questions = res.questions
-			})
+		components: {
+			quizOptions: QuizOptions
 		}
 	}
 </script>
