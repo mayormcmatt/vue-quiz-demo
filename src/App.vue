@@ -1,9 +1,13 @@
 <template>
 	<div id="app">
-		<!-- Iterate over question objects in JSON, render that many quizComponent elements, bind the individual questions and options so as to pass them as props into the component -->
-		<quizComponent v-for="question in questions" :question="question.question" :id="question.id" :options="question.options" :qNum="qNum"></quizComponent>
-
-		<button @click="increment">Click</button>
+		<!-- Iterate over question objects in JSON, render that many quizComponent elements, bind the individual questions and options so as to pass them as props into the component; listen for nexQuestionPlease event, do stuff -->
+		<quizComponent v-for="question in questions"
+			:question="question.question"
+			:id="question.id"
+			:options="question.options"
+			:qNum="qNum"
+			@nextQuestionPlease="qNum++">
+		</quizComponent>
 	</div>
 </template>
 
@@ -24,17 +28,12 @@
 		components: {
 			quizComponent: Quiz
 		},
-		methods: {
-			increment: function () {
-				this.qNum++
-			}
-		},
 		// Lifecycle hook: on Vue app creation run a fetch of the JSON and then set response as data property
 		created: function () {
 			fetch(this.jsonURL)
-				.then(res => res.json())
-				.then(res => {
-					this.questions = res.questions
+				.then(response => response.json())
+				.then(response => {
+					this.questions = response.questions
 				})
 		}
 	}

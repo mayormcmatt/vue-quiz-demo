@@ -3,7 +3,13 @@
 	<div v-if="id <= qNum">
 		<p>{{id}}.</p>
 		<p>{{question}}</p>
-		<quizOptions v-for="option in options" :optionText="option.option"></quizOptions>
+		<!-- Iterate over quiz options, radio button for each; listen for optionSelected event, change things -->
+		<quizOptions
+			v-for="option in options"
+			:optionText="option.option"
+			@selectedEvent="nextQuestion(), optionSelected = $event">
+		</quizOptions>
+		<p v-model="optionSelected">{{optionSelected}}</p>
 	</div>
 </template>
 
@@ -16,6 +22,16 @@
 		props: ['question', 'id', 'options', 'qNum'],
 		components: {
 			quizOptions: QuizOptions
+		},
+		data() {
+			return {
+				optionSelected: ''
+			}
+		},
+		methods: {
+			nextQuestion: function() {
+				this.$emit('nextQuestionPlease')
+			}
 		}
 	}
 </script>
