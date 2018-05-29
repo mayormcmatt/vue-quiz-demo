@@ -1,6 +1,6 @@
 <template>
-	<div>
-		<label>
+	<div class="quiz-option">
+		<label class="sans-serif-font">
 			<input type="radio"
 				:value="optionText"
 				v-model="selectedValue"
@@ -26,4 +26,14 @@
 	}
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+	.quiz-option {
+		padding: 16px 0 16px 25px;
+		width: 425px;
+		margin: 0 auto;
+
+		label {
+			margin-left: -25px;
+		}
+	}
+</style>
