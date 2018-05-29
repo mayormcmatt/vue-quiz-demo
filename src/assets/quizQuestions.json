@@ -56,6 +56,24 @@
 				}
 			],
 			"hintText": "Your basic arachnid warrior isn't too smart, but you can blow off a limb and it's still 86% combat effective. Here's a tip: aim for the nerve stem and put it down for good."
+		},
+		{
+			"id": 4,
+			"question": "The questions would go on like this until they're all answered",
+			"options": [{
+					"option": "I understand",
+					"value": 1
+				},
+				{
+					"option": "That's magic",
+					"value": 2
+				},
+				{
+					"option": "My cat's breath smells like cat food",
+					"value": 3
+				}
+			],
+			"hintText": "Vue.js is good, clean fun."
 		}
 	]
 }

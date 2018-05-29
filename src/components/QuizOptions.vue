@@ -1,3 +1,6 @@
+<!-- TODO: 	1. selectedValue model is not communicating with parent component despite custom $emit event - why?
+	2. Custom radio button dots
+	3. Handle answers (probably send them via event bus to App component) -->
 <template>
 	<div class="quiz-option">
 		<label class="sans-serif-font">
@@ -18,6 +21,7 @@
 				selectedValue: ''
 			}
 		},
+		// Well, this should be sending the value to the parent, but having issues
 		methods: {
 			selected: function() {
 				this.$emit('selectedEvent', this.selectedValue)

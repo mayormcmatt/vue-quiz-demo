@@ -1,3 +1,5 @@
+<!-- TODO: 	1. Is there a better way to pass and render the quiz options? -->
+<!-- 2. Reset radio buttons when alternate choice selected -->
 <template>
 	<!-- Conditionally render the question based on ID -->
 	<div class="quiz-question" v-if="id <= qNum">
@@ -30,6 +32,7 @@
 				optionSelected: ''
 			}
 		},
+		// Pass call to next question to the parent component
 		methods: {
 			nextQuestion: function() {
 				this.$emit('nextQuestionPlease')
